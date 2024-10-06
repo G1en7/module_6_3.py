@@ -17,18 +17,17 @@ class Eagle:
 class Pegasus(Horse, Eagle):
 
     def __init__(self):
-        Horse = 0
-        Eagle = 0
+        super().__init__
 
     def move(self, dx, dy):
-        super().run(dx)
-        super().fly(dy)
+        self.run(dx)
+        self.fly(dy)
 
     def get_pos(self):
         return self.x_distance, self.y_distance
 
     def voice(self):
-        print(Eagle.sound)
+        print(self.sound)
 
 
 
